@@ -11,10 +11,10 @@ use lib '../lib';
 use Lingua::EN::Bigram;
 use strict;
 
-my @files = `find ../clean/travel-mk/*.bersih.dat`;
-# my @files = `find ../clean/otomotif-mk/*.bersih.dat`;
-open TOFILE, "> ./travel-mk/3_grams_travel.txt" or die "Cannot Open File!!!";
-# open TOFILE, "> ./kamus/otomotif-mk/3_grams_otomotif.txt" or die "Cannot Open File!!!";
+#my @files = `find ../clean/travel-mk/*.bersih.dat`;
+ my @files = `find ../clean/otomotif-mk/*.bersih.dat`;
+#open TOFILE, "> ./travel-mk/3_grams_travel.txt" or die "Cannot Open File!!!";
+ open TOFILE, "> otomotif-mk/3_grams_otomotif.txt" or die "Cannot Open File!!!";
 my $counter = 1;
 my %stopwords;
 
