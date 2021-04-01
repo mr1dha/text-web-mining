@@ -9,7 +9,7 @@ my $directory = $ARGV[0] or die "directory belum diisi"; #example : ./data not .
 my @files = `find $directory/*.html`;
 my $extractor = HTML::ExtractContent->new;
 # Directory where clean data are stored, its better to set this in config file
-my $PATHCLEAN = "./otomotif-lab";
+my $PATHCLEAN = "./travel-mk";
 
 my @count=(0,0);
 my $category;
@@ -17,7 +17,7 @@ my $i = 1;
 print "On process get data from $ARGV[0] ...\n";
 foreach my $file(@files){ 
     
-    my $fileout = "$PATHCLEAN/otomotif-$i.bersih.dat";
+    my $fileout = "$PATHCLEAN/travel-$i.bersih.dat";
 
     # open file
     open OUT, "> $fileout" or die "Cannot Open File!!!";
