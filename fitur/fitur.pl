@@ -14,9 +14,9 @@ if(!$dirfile){
 }
 
 
-my @dictionary = ("travel_0.4_final.txt","otomotif_0.4_final.txt");
+my @dictionary = ("travel_0.5_final.txt","otomotif_0.5_final.txt");
 
-print "Load & Hash Dictionary\n";
+print "Collecting  Dictionary ...\n";
 my (%hashtravel,%hashotomotif);
 
 foreach my $dict(@dictionary){
